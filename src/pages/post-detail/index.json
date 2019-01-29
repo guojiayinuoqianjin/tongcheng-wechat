@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "banner-swiper": "../../components/swiper/swiper",
+    "scroll-message":"../../components/scroll-message/scroll-message",
+    "card":"../../components/card/card",
+    "reply-card":"../../components/reply/reply"
+  },
+  "navigationBarTitleText": "帖子详情",
+  "enablePullDownRefresh":false
+}

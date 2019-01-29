@@ -1,0 +1,36 @@
+var IMG_SERVER=''
+var formatTime = function (date) {
+  if(!date) return;
+  date = regReplace(date)
+  var year = getDate(date).getFullYear()
+  var month = getDate(date).getMonth()+1
+  var day = getDate(date).getDate()
+  var hour = getDate(date).getHours()
+  var minute = getDate(date).getMinutes()
+  var second = getDate(date).getSeconds()
+  return year+'年'+formatNumber(month)+'月'+formatNumber(day)+'日' + '' + [hour, minute, second].map(formatNumber).join(':')
+}
+var formatNumber = function (n) {
+  n = n.toString()
+  return n[1]?n:'0'+n
+}
+var regReplace = function (str) {
+  if(!str) return;
+  var r = getRegExp("\-", "g")
+  return str.replace(r, "/")
+}
+var groupImage = function (url, size) {
+  // var imgHost = ''
+  // var size = size || 's240240'
+  // var q = '70'
+  // if(!url) return;
+  // if(url.indexOf('https') === -1){
+  //   url = imgHost + size + url + '!q' + q
+  // }
+  return url
+}
+
+module.exports = {
+  formatTime: formatTime,
+  groupImage: groupImage
+}

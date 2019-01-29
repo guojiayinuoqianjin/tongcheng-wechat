@@ -1,0 +1,61 @@
+.post-card{
+  position: relative;
+  padding: 20rpx 20rpx 0;
+  box-sizing: border-box;
+  display: block;
+  width:100%;
+  flex-wrap:wrap;
+  //height: 120rpx;
+  .authorInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 30rpx;
+    line-height: 38rpx;
+    height: 35rpx;
+  }
+  .postInfo{
+    display: flex;
+    flex-direction: row;
+    //height: 35rpx;
+    .title{
+      font-size: 30rpx;
+      line-height: 38rpx;
+      color:#302200;
+      overflow:hidden; //超出一行文字自动隐藏
+      text-overflow:ellipsis;//文字隐藏后添加省略号
+      white-space:nowrap; //强制不换行
+    }
+  }
+  .replyInfo{
+    display: flex;
+    flex-direction: row;
+    //height: 35rpx;
+    font-size: 26rpx;
+    line-height: 32rpx;
+    .content{
+      width: 500rpx;
+      font-size: 26rpx;
+      line-height: 32rpx;
+    }
+    .praise{
+      display: flex;
+      flex-direction: row;
+      margin-right: 10rpx;
+    }
+    .visit{
+      display: flex;
+      flex-direction: row;
+      margin-right: 10rpx;
+    }
+    .reply{
+      display: flex;
+      flex-direction: row;
+      margin-right: 10rpx;
+    }
+    .logo{
+      width: 30rpx;
+      height: 30rpx;
+    }
+  }
+}

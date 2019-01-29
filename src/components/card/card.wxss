@@ -1,0 +1,58 @@
+.post-card {
+  position: relative;
+  padding: 20rpx 20rpx 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.post-card .authorInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 30rpx;
+  line-height: 38rpx;
+  height: 35rpx;
+}
+.post-card .postInfo {
+  display: flex;
+  flex-direction: row;
+}
+.post-card .postInfo .title {
+  font-size: 30rpx;
+  line-height: 38rpx;
+  color: #302200;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.post-card .replyInfo {
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+  line-height: 32rpx;
+}
+.post-card .replyInfo .content {
+  width: 500rpx;
+  font-size: 26rpx;
+  line-height: 32rpx;
+}
+.post-card .replyInfo .praise {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10rpx;
+}
+.post-card .replyInfo .visit {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10rpx;
+}
+.post-card .replyInfo .reply {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10rpx;
+}
+.post-card .replyInfo .logo {
+  width: 30rpx;
+  height: 30rpx;
+}

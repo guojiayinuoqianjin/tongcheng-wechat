@@ -1,0 +1,34 @@
+<view class="login">
+  <open-data class="avatar" type="userAvatarUrl"></open-data>
+  <open-data class="nickname" type="userNickName" lang="zh_CN"></open-data>
+  <view class="name">
+    <input placeholder="请输入您的称呼" type="text" maxlength="20" confirm-type="next" bindconfirm="onCheckName" bindblur="onCheckName" bindinput="bindNameInput"/>
+  </view>
+  <view class="hometown">
+    <view class="hometown_text">请选择家乡</view>
+    <picker bindchange="bindHometownChange" range="{{provinces}}" value="{{hometownIndex}}" range-key="{{'name'}}">
+      <view class="hometown_picker">
+        家乡：{{provinces[hometownIndex].name}}
+      </view>
+    </picker>
+  </view>
+  <view class="region">
+    <view class="region_text">请选择所在地</view>
+    <picker bindchange="bindRegionChange" range="{{provinces}}" value="{{regionIndex}}" range-key="{{'name'}}">
+      <view class="region_picker">
+        所在地：{{provinces[regionIndex].name}}
+      </view>
+    </picker>
+  </view>
+  <view class="gender">
+    <view class="gender_text">请选择性别</view>
+    <picker bindchange="bindGenderChange" range="{{genders}}" value="{{genderIndex}}" range-key="{{'name'}}">
+      <view class="gender_picker">
+        性别：{{genders[genderIndex].name}}
+      </view>
+    </picker>
+  </view>
+  <button class="authBtn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+    授权登录并注册
+  </button>
+</view>

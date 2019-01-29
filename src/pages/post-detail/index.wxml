@@ -1,0 +1,16 @@
+<view class="post-detail">
+  <!-- 页面全局添加授权判断-->
+  <!--<auth-setting bindgetuserinfo="onGotUserInfo"></auth-setting> -->
+  <!-- 帖子列表-->
+  <card data="{{postData}}" external-post-card="post-detail-item"></card>
+  <!-- 帖子回复列表-->
+  <block wx:for="{{replyDatas.items}}" wx:for-item="replyData">
+    <reply-card wx:if="{{replyData.id}}" data="{{replyData}}" external-reply-card="reply-item" bind:tapContentEvent="onTapContentEvent" data-reply="{{replyData}}"></reply-card>
+  </block>
+  <view class='pocket_input' style='bottom:{{height}}px;'>
+    <textarea type='text' placeholder-style='input-placeholder' cursor='{{cursor_position}}' class='input_style' placeholder='随便说点什么吧~' focus='{{focus}}' cursor-spacing="2" adjust-position='{{adjust_position}}' maxlength='300' bindfocus="bindfocus" bindblur="bindblur" bindconfirm="bindconfirm" bindinput="bindinput" value="{{replyTxt}}"></textarea>
+    <button id="reply-post" class="reply-post-btn" bindtap='onReply'>
+      回复
+    </button>
+  </view>
+</view>

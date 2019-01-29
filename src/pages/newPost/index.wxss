@@ -1,0 +1,28 @@
+.new-post .post-title {
+  width: 100%;
+  height: 50rpx;
+  margin-bottom: 10rpx;
+}
+.new-post .post-title .input_title_style {
+  height: 40rpx;
+}
+.new-post .post-content {
+  width: 100%;
+  height: 600rpx;
+  margin: 15rpx auto;
+}
+.new-post .post-content .input_content_style {
+  height: 500rpx;
+}
+.new-post .post-content .create-post-btn {
+  height: 100rpx;
+  background-color: #e4ac20;
+  box-shadow: 0 14rpx 8rpx 0 rgba(228, 172, 32, 0.2);
+  font-size: 28rpx;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+}

@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/index",
+    "pages/post-detail/index",
+    "pages/newPost/index",
+    "pages/group/index",
+    "pages/account/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "老乡同城",
+    "navigationBarTextStyle":"black",
+    "backgroundColorTop":"#ffffff",
+    "backgroundColorBottom":"#ffffff"
+  },
+  "debug": false
+}

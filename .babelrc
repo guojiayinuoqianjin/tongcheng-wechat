@@ -1,0 +1,16 @@
+{
+  "presets":[
+    [
+      "env",
+      {
+        "modules":false,
+        "targets":{
+          "node":"10.14"
+        },
+        "useBuiltIns":true,
+        "debug":true
+      }
+    ]
+  ],
+  "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+}

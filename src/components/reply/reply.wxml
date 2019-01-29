@@ -1,0 +1,21 @@
+<view class="reply-card external-reply-card">
+  <view class="card-main" bindtap="onInternal" data-status="{{item.id}}"  catchtap='_tapContentEvent'>
+    <view class="authorInfo">
+      <image wx:if="{{item.authorAvatarUrl}}" lazy-load="true" mode="aspectFit" class="avatar" src="{{item.authorAvatarUrl}}"/>
+      <view class="nickname">
+        回复者：{{item.author.nickname}}
+      </view>
+      <view class="region">
+        所在地:{{item.authorRegion.name}}
+      </view>
+      <view class="hometown">
+        家乡:{{item.authorHometown.name}}
+      </view>
+    </view>
+    <view class="replyInfo">
+      <view class="content">
+        {{item.content}}
+      </view>
+    </view>
+  </view>
+</view>

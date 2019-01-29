@@ -1,0 +1,38 @@
+<view class="post-card external-post-card">
+  <view class="card-main" bindtap="onInternal" data-status="{{item.id}}">
+    <view class="authorInfo">
+      <image wx:if="{{item.authorAvatarUrl}}" lazy-load="true" mode="aspectFit" class="avatar" src="{{item.authorAvatarUrl}}"/>
+      <view class="nickname">
+        发帖者:{{item.author.nickname}}
+      </view>
+      <view class="region">
+        所在地:{{item.authorRegion.name}}
+      </view>
+      <view class="hometown">
+        家乡:{{item.authorHometown.name}}
+      </view>
+    </view>
+    <view class="postInfo">
+      <view class="title">
+        {{item.title}}
+      </view>
+    </view>
+    <view class="replyInfo">
+      <view class="content">
+        {{item.content}}
+      </view>
+      <view class="praise">
+        <image mode="aspectFit" class="logo" src="../../images/icon-praise.png"/>
+        <view class="cnt">{{item.praiseCnt ? item.praiseCnt : 0}}</view>
+      </view>
+      <view class="visit">
+        <image mode="aspectFit" class="logo" src="../../images/icon-visit.png"/>
+        <view class="cnt">{{item.visitCnt ? item.visitCnt : 0}}</view>
+      </view>
+      <view class="reply">
+        <image mode="aspectFit" class="logo" src="../../images/icon-reply.png"/>
+        <view class="cnt">{{item.replyCnt ? tem.replyCnt : 0}}</view>
+      </view>
+    </view>
+  </view>
+</view>

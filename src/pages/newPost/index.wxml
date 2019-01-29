@@ -1,0 +1,11 @@
+<view class="new-post">
+  <view class='post-title'>
+    <input type='text' placeholder-style='input-placeholder' class='input_title_style' placeholder='标题~' cursor-spacing="2"  maxlength='100' value="{{newPost.title}}" bindinput="bindTitleInput"></input>
+  </view>
+  <view class='post-content'>
+    <textarea type='text' placeholder-style='input-placeholder' cursor='{{cursor_position}}' class='input_content_style' placeholder='随便说点什么吧~' focus='{{focus}}' cursor-spacing="2" maxlength='300' bindfocus="bindfocus" bindblur="bindblur" bindconfirm="bindconfirm" bindinput="bindContentInput" value="{{newPost.content}}"></textarea>
+    <button id="create-post" class="create-post-btn" bindtap='onCreatePost'>
+      发布
+    </button>
+  </view>
+</view>

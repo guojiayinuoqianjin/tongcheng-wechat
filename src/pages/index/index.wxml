@@ -1,0 +1,12 @@
+<view class="home">
+  <!-- 页面全局添加授权判断-->
+  <!--<auth-setting bindgetuserinfo="onGotUserInfo"></auth-setting> -->
+  <!--轮播图-->
+  <banner-swiper img-urls="{{banners}}" class="external-scroll__message" external-banner-swiper="home-banner"></banner-swiper>
+  <!-- 滚动播报-->
+  <scroll-message messages="{{messages}}"></scroll-message>
+  <!-- 帖子列表-->
+  <block wx:for="{{posts.items}}" wx:for-item="post">
+    <card wx:if="{{post.id}}" data="{{post}}" external-post-card="post-item" needNavigate="true"></card>
+  </block>
+</view>

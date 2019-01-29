@@ -1,0 +1,6 @@
+.home .home-banner {
+  margin-bottom: 10rpx;
+}
+.home .post-item {
+  margin: 15rpx auto;
+}

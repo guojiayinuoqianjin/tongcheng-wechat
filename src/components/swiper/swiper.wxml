@@ -1,0 +1,20 @@
+<wxs src="../../wxs/filter.wxs" module="filter"/>
+<view class="banner__swiper external-banner-swiper">
+  <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}"
+          interval="{{interval}}"
+          duration="{{duration}}"
+          circular="{{circular}}"
+          indicator-active-color="#ffffff"
+          previous-margin="{{previousMargin}}"
+          next-margin="{{nextMargin}}"
+          bindchange="swiperChange"
+          class="swiper__com"
+  >
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item class="swiper__item">
+        <image src="{{item.imageUrl}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

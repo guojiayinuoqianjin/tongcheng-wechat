@@ -1,0 +1,19 @@
+.swiper__com {
+  display: block;
+  height: 300rpx;
+  position: relative;
+}
+.swiper__com .swiper__item {
+  display: flex;
+  align-items: center;
+}
+.swiper__com .swiper__item .slide-image {
+  width: 640rpx;
+  height: 300rpx;
+  display: inline-block;
+  margin: 0  auto;
+}
+.swiper__com .swiper__item .activeHeight {
+  margin-top: 0;
+  height: 300rpx;
+}

@@ -1,0 +1,18 @@
+<view class="scroll-message external-scroll-message">
+  <!--<image src="../../images/icon-message.png" class="scroll__message&#45;&#45;icon" style="width: 30px; height: 30px; background-color: #eeeeee;" mode="scaleToFill"></image>-->
+  <image src="../../images/icon-message.png" class="scroll__message--icon"></image>
+  <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}"
+          interval="{{interval}}"
+          duration="{{duration}}"
+          circular="{{circular}}"
+          vertical="{{vertical}}"
+          class="swiper__com"
+  >
+    <block wx:for="{{messages}}" wx:key="{{index}}">
+      <swiper-item class="swiper__item">
+        {{item}}
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

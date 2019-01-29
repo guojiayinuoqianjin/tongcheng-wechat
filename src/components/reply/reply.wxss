@@ -1,0 +1,26 @@
+.reply-card {
+  position: relative;
+  padding: 20rpx 20rpx 0;
+  box-sizing: border-box;
+  display: block;
+  height: 120rpx;
+}
+.reply-card .authorInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 30rpx;
+  line-height: 38rpx;
+  height: 35rpx;
+}
+.reply-card .replyInfo {
+  display: flex;
+  flex-direction: row;
+  height: 35rpx;
+  font-size: 26rpx;
+  line-height: 32rpx;
+}
+.reply-card .replyInfo .content {
+  font-size: 26rpx;
+  line-height: 32rpx;
+}
