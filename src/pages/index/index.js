@@ -6,13 +6,13 @@ Page({
     },
     banners:[
       {
-        imageUrl:'http://qijunrong.cn/banner/banner1.jpg'
+        imageUrl:'https://qijunrong.cn/banner/banner1.jpg'
       },
       {
-        imageUrl:'http://qijunrong.cn/banner/banner2.jpg'
+        imageUrl:'https://qijunrong.cn/banner/banner2.jpg'
       },
       {
-        imageUrl:'http://qijunrong.cn/banner/banner3.jpg'
+        imageUrl:'https://qijunrong.cn/banner/banner3.jpg'
       }
     ],
     messages:[

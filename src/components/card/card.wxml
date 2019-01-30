@@ -14,22 +14,22 @@
     </view>
     <view class="postInfo">
       <view class="title">
-        {{item.title}}
+        <text>{{item.title}}</text>
       </view>
     </view>
     <view class="replyInfo">
       <view class="content">
-        {{item.content}}
+        <text>{{item.content}}</text>
       </view>
-      <view class="praise">
+      <view class="praise" wx:if="{{needNavigate}}">
         <image mode="aspectFit" class="logo" src="../../images/icon-praise.png"/>
         <view class="cnt">{{item.praiseCnt ? item.praiseCnt : 0}}</view>
       </view>
-      <view class="visit">
+      <view class="visit" wx:if="{{needNavigate}}">
         <image mode="aspectFit" class="logo" src="../../images/icon-visit.png"/>
         <view class="cnt">{{item.visitCnt ? item.visitCnt : 0}}</view>
       </view>
-      <view class="reply">
+      <view class="reply" wx:if="{{needNavigate}}">
         <image mode="aspectFit" class="logo" src="../../images/icon-reply.png"/>
         <view class="cnt">{{item.replyCnt ? tem.replyCnt : 0}}</view>
       </view>

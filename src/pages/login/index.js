@@ -1,3 +1,4 @@
+import * as Constants from '../../constants/constants'
 const app = getApp()
 Page({
   data: {
@@ -202,6 +203,15 @@ Page({
         console.log('---login--bindGetUserInfo--registeAndLogin--data---\n', data)
         app.Api.registeAndLogin(data).then(res => {
           console.log('--login--bindGetUserInfo--registeAndLogin--res---\n', res)
+          //存储用户信息
+          app.globalData.userInfo = res.data || {}
+          app.globalData.userInfo.regionId = data.regionId
+          app.globalData.userInfo.hometownId = data.hometownId
+          app.globalData.userInfo.token = data.uid
+          wx.setStorageSync(
+            Constants.STORAGE_KEY.USER_INFO,
+            app.globalData.userInfo
+          )
           // if() {
           wx.navigateTo({
             'url': '/pages/index/index'
@@ -217,7 +227,7 @@ Page({
   bindGenderChange(e){
     console.log('--bindGenderChange--e', e)
     this.setData({
-      gendersIndex:e.detail.value
+      genderIndex:e.detail.value
     })
   },
   bindHometownChange(e){

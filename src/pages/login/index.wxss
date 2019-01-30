@@ -6,3 +6,33 @@
   overflow: hidden;
   text-align: center;
 }
+.login .authBtn {
+  padding: 20rpx;
+}
+.login .hometown {
+  padding: 10rpx;
+}
+.login .hometown_text {
+  font-size: 35rpx;
+  line-height: 38rpx;
+  font-weight: bold;
+  color: #302200;
+}
+.login .region {
+  padding: 10rpx;
+}
+.login .region_text {
+  font-size: 35rpx;
+  line-height: 38rpx;
+  font-weight: bold;
+  color: #302200;
+}
+.login .gender {
+  padding: 10rpx;
+}
+.login .gender_text {
+  font-size: 35rpx;
+  line-height: 38rpx;
+  font-weight: bold;
+  color: #302200;
+}

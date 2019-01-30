@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 30rpx;
+  font-size: 35rpx;
   line-height: 38rpx;
   height: 35rpx;
 }
@@ -19,8 +19,9 @@
   flex-direction: row;
 }
 .post-card .postInfo .title {
-  font-size: 30rpx;
+  font-size: 35rpx;
   line-height: 38rpx;
+  font-weight: bold;
   color: #302200;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -29,30 +30,38 @@
 .post-card .replyInfo {
   display: flex;
   flex-direction: row;
-  font-size: 26rpx;
+  font-size: 30rpx;
   line-height: 32rpx;
 }
 .post-card .replyInfo .content {
-  width: 500rpx;
-  font-size: 26rpx;
+  width: 100%;
+  font-size: 30rpx;
   line-height: 32rpx;
 }
 .post-card .replyInfo .praise {
   display: flex;
   flex-direction: row;
   margin-right: 10rpx;
+  justify-content: center;
+  align-items: Center;
 }
 .post-card .replyInfo .visit {
   display: flex;
   flex-direction: row;
   margin-right: 10rpx;
+  justify-content: center;
+  align-items: Center;
 }
 .post-card .replyInfo .reply {
   display: flex;
   flex-direction: row;
   margin-right: 10rpx;
+  justify-content: center;
+  align-items: Center;
 }
 .post-card .replyInfo .logo {
   width: 30rpx;
   height: 30rpx;
+  justify-content: center;
+  align-items: Center;
 }

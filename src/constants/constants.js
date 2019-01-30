@@ -4,4 +4,4 @@ export const STORAGE_KEY = {
   LOGIN_INFO:'LOGIN_INFO'
 }
 
-export const API_BASE_URL = 'http://qijunrong.cn/api/v1/'
+export const API_BASE_URL = 'https://qijunrong.cn/api/v1/'

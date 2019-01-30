@@ -4,6 +4,6 @@
     "scroll-message":"../../components/scroll-message/scroll-message",
     "card":"../../components/card/card"
   },
-  "navigationBarTitleText": "老乡同城",
+  "navigationBarTitleText": "老乡同城情",
   "enablePullDownRefresh":false
 }

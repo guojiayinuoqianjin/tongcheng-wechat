@@ -13,7 +13,7 @@
     </picker>
   </view>
   <view class="region">
-    <view class="region_text">请选择所在地</view>
+    <view class="region_text">请点击选择所在地</view>
     <picker bindchange="bindRegionChange" range="{{provinces}}" value="{{regionIndex}}" range-key="{{'name'}}">
       <view class="region_picker">
         所在地：{{provinces[regionIndex].name}}
@@ -21,7 +21,7 @@
     </picker>
   </view>
   <view class="gender">
-    <view class="gender_text">请选择性别</view>
+    <view class="gender_text">请点击选择性别</view>
     <picker bindchange="bindGenderChange" range="{{genders}}" value="{{genderIndex}}" range-key="{{'name'}}">
       <view class="gender_picker">
         性别：{{genders[genderIndex].name}}
